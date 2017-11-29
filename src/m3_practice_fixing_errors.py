@@ -2,11 +2,11 @@
 This module lets you practice correcting SYNTAX (notation) errors.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Jonathan Kinnard.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
-# TODO: 2.
+# Done: 2.
 #   Locate the syntax (notation) errors in this file
 #   by looking for red underlines.
 #
@@ -36,16 +36,15 @@ import math
 def main():
     """ Calls the other functions in this module to demo them. """
     print_math()
-    tutle_fn()
+    turtle_fun()
 
 
-def print_math:
+def print_math():
     """ Prints some calculated values. """
-    x = cos(pi)
+    x = math.cos(math.pi)
     print(x)
-
-    y = sin(pi)
-    print(The sine of PI is, y)
+    y = math.sin(math.pi)
+    print('The sine of PI is', y)
 
 
 def turtle_fun():
@@ -55,18 +54,14 @@ def turtle_fun():
     and waits for the user to click anywhere in the window to close it.
     """
     window = rg.TurtleWindow()
-
     alan = rg.SimpleTurtle()
-alan.pen = rg.Pen('blue', 30)
+    alan.pen = rg.Pen('blue', 30)
     alan.paint_bucket = rg.PaintBucket('yellow')
-
-    alan.back(3 * (47 + 16)
-    al.begin_fill()
-    alan.circle(25)
+    alan.backward(3 * (47 + 16))
+    alan.begin_fill()
+    alan.draw_circle(25)
     alan.end_fill()
-
-    forward(200)
-
+    alan.forward(200)
     window.close_on_mouse_click()
 
 # ----------------------------------------------------------------------
