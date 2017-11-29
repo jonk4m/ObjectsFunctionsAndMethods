@@ -33,7 +33,9 @@ def main():
     # A TurtleWindow works "behind the scenes" to enable Turtle movement
     window = rg.TurtleWindow()
 
+    turtle5()
     turtle1()
+    turtle4()
     turtle3()
     turtle2()
     turtle2()
@@ -50,8 +52,10 @@ def turtle1():
 
     ada.pen = rg.Pen('aquamarine', 30)
     ada.paint_bucket = rg.PaintBucket('yellow')
+    #this changes color of the turtle body
 
     ada.begin_fill()
+    #fills in whatever shape you're about to make once completed
     ada.draw_circle(150)
     ada.end_fill()
 
@@ -64,7 +68,7 @@ def turtle2():
     """
     grace = rg.SimpleTurtle('triangle')
 
-    grace.pen = rg.Pen('blue', 15)
+    grace.pen = rg.Pen('blue', 10)
     grace.paint_bucket = rg.PaintBucket('magenta')
 
     # Keep track of where I am, to go back to it at the end.
@@ -103,31 +107,59 @@ def turtle3():
     maja.end_fill()
 
 
+def turtle4():
+    caitlin = rg.SimpleTurtle()
+    caitlin.pen = rg.Pen('cornsilk3', 10)
+    caitlin.paint_bucket = rg.PaintBucket('blue')
+    caitlin.begin_fill()
+    caitlin.draw_circle(250)
+    caitlin.end_fill()
+
+def turtle5():
+    caitlin2 = rg.SimpleTurtle()
+    caitlin3 = rg.SimpleTurtle()
+    caitlin2.pen = rg.Pen('cornsilk1', 50)
+    caitlin3.pen = rg.Pen('cornsilk2', 15)
+    caitlin2.paint_bucket = rg.PaintBucket('red')
+    caitlin3.paint_bucket = rg.PaintBucket('cornsilk4')
+    caitlin2.forward(25)
+    caitlin2.begin_fill()
+    caitlin2.draw_circle(50)
+    caitlin2.end_fill()
+    caitlin3.right(50)
+    caitlin3.forward(50)
+    caitlin3.begin_fill()
+    caitlin3.draw_circle(150)
+    caitlin3.end_fill()
+
+
 ########################################################################
 #
-# TODO: 2.
+# Done: 2.
 #   READ the code above.  Be sure you understand:
 #     -- How many functions are defined above?
 #           (Answer: 4)
 #     -- For each function definition:
 #          -- Where does that function definition begin?
 #             Where does it end?
+#                               It begins at the start of the indentation and ends at the next beginning with def
 #     -- How many times does   main   call the   turtle1   function?
 #            (Answer: 1)
 #     -- How many times does   main   call the   turtle2   function?
 #            (Hint: the answer is NOT 1.)
+#                   Twice
 #     -- What line of code calls the   main   function?
 #            (Answer: look at the LAST line of this module, far below.)
-#
+#                       main()
 #     ** ASK QUESTIONS if you are uncertain. **
 #
 #   RELATE what is DRAWN to the CODE above.  Be sure you understand:
 #       -- WHEN does the code in   main   run?
-#       -- WHEN does the code in   turtle1   run?
-#                    the code in   turtle2   run?
-#                    the code in   turtle3   run?
+#       -- WHEN does the code in   turtle1   run? - first
+#                    the code in   turtle2   run? - second
+#                    the code in   turtle3   run? - third and fourth
 #       -- For each of the above, WHY does that code run when it does?
-#
+#               because that's the order in the main function
 #     ** ASK QUESTIONS if you are uncertain. **
 #
 #   When you believe you understand the answers
@@ -137,13 +169,14 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 3.
+# Done: 3.
 #   Define another function,
 #   immediately below the end of the definition of   turtle3   above.
 #   Name your new function   turtle4.
 #
 #   The Python "pep8" coding standard says to leave exactly 2 blank
 #   lines between function definitions, so be sure to do so.
+#               LOL
 #
 #   Your new function should:
 #    1. Define a SimpleTurtle (as   turtle3   as other functions did).
@@ -167,7 +200,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 4.
+# Done: 4.
 #   Add a line to   main   that CALLS your new function immediately
 #   AFTER  main  calls turtle1.  So:
 #     -- the SimpleTurtle from turtle1 should move,
@@ -183,7 +216,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 5.
+# Done: 5.
 #   The previous two TODOs IMPLEMENTED a function (TO DO 3)
 #   and TESTED that function (TO DO 4).
 #
