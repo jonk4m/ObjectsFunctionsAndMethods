@@ -5,28 +5,28 @@ This module uses ROSEGRAPHICS to demonstrate:
   -- accessing their DATA via INSTANCE VARIABLES.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Jonathan Kinnard.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
 #
-# TODO: 2.
+# Done: 2.
 #   RUN this program.  Then answer the following,
 #     GETTING HELP AS NEED! (Ask questions!!!)
 #
 #     a. For the RoseGraphics coordinate system:
 #
 #        -- Where is the (0, 0) point on the screen?
-#              WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#               The top left corner of the screen
 #
 #        -- In what direction on the screen does the positive X-axis point?
-#              WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#              To the right
 #
 #        -- In what direction on the screen does the positive Y-axis point?
-#              WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#              Down the screen
 #
 #     b. Write a line of code that constructs a basic RoseWindow object:
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            window = rg.RoseWindow(1000,600)
 #
 #     c. What is the default height of a RoseWindow?
 #        (Type the code shown in your answer above within main to see if PyCharm will help you figure out the answer.
@@ -81,23 +81,24 @@ def main():
 
 def example1():
     """ Displays an empty window. """
-    window = rg.RoseWindow(500, 300, 'Example 1: An empty window')
+    window = rg.RoseWindow(1000, 600, 'Example 1: An empty window')
     window.close_on_mouse_click()
-
+#500,300
 
 def example2():
     """ Displays two Point objects. """
     # ------------------------------------------------------------------
     # Construct the window in which objects will be drawn.
     # ------------------------------------------------------------------
-    window = rg.RoseWindow()
+    window = rg.RoseWindow(1000,600)
 
     # ------------------------------------------------------------------
     # Construct some rg.Point objects.
     # Note: the y-axis goes DOWN from the TOP.
     # ------------------------------------------------------------------
     point1 = rg.Point(100, 150)
-    point2 = rg.Point(200, 50)
+    #point2 = rg.Point(200, 50)
+    point2 = rg.Point(180, 170)
 
     # ------------------------------------------------------------------
     # A RoseGraphics object is not associated with a window,
