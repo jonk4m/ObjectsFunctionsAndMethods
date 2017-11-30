@@ -59,7 +59,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #            After doing so, pauses the given number of seconds.
 #
 #     g. When is a RoseWindow close_on_mouse_click method call necessary?  Why?
-#            Not really because you could exit out of the window, but it is nice to have.
+#           Yes because otherwise the window will appear then disappear
 #
 #   ASK QUESTIONS ** NOW ** if you do not understand how the
 #     RoseGraphics graphics system works.
@@ -102,11 +102,6 @@ def example2():
     point1 = rg.Point(100, 150)
     #point2 = rg.Point(200, 50)
     point2 = rg.Point(180, 170)
-
-    # ------------------------------------------------------------------
-    # A RoseGraphics object is not associated with a window,
-    # and hence are not drawn, until you ATTACH it to a window.
-    # ------------------------------------------------------------------
     point1.attach_to(window)
     point2.attach_to(window)
 
